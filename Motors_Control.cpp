@@ -23,10 +23,10 @@ void Motors_Control::FORWARD(int speed)
 void Motors_Control::BACKWARD(int speed)
 {
     _speed = speed;
-    analogWrite(_pin, speed);
+    analogWrite(_pin, _speed);
     analogWrite(_pin2, 0);
     analogWrite(_pin3, 0);
-    analogWrite(_pin4, speed);
+    analogWrite(_pin4, _speed);
 }
 void Motors_Control::STOP()
 {
@@ -39,15 +39,15 @@ void Motors_Control::LEFT(int speed)
 {
     _speed = speed;
     analogWrite(_pin, 0);
-    analogWrite(_pin2, speed);
+    analogWrite(_pin2, _speed);
     analogWrite(_pin3, 0);
-    analogWrite(_pin4, speed);
+    analogWrite(_pin4, _speed);
 }
 void Motors_Control::RIGHT(int speed)
 {
     _speed = speed;
-    analogWrite(_pin, speed);
+    analogWrite(_pin, _speed);
     analogWrite(_pin2, 0);
-    analogWrite(_pin3, speed);
+    analogWrite(_pin3, _speed);
     analogWrite(_pin4, 0);
 }
