@@ -11,11 +11,5 @@ public:
     void LEFT(int speed);
     void RIGHT(int speed);
     void STOP();
-private:
-    int _pin;
-    int _pin2;
-    int _pin3;
-    int _pin4;
-    int _speed;
 };
 #endif
